@@ -1,0 +1,23 @@
+# --- AWS SDK ---
+# Required to interact with S3, Lambda, and Glue programmatically
+boto3>=1.28.0
+
+# --- Data Ingestion (MySQL to S3) ---
+# Connector to read raw data from your local MySQL database
+mysql-connector-python>=8.1.0
+# Alternative if you used PyMySQL:
+# pymysql>=1.1.0
+
+# --- Data Processing (Lambda & Notebooks) ---
+# Standard libraries for handling DataFrames (CSVs, Parquet)
+pandas>=2.1.0
+numpy>=1.26.0
+
+# --- AWS Glue & Spark ---
+# Note: PySpark is pre-installed in the AWS Glue environment.
+# Included here for local development or documentation purposes.
+pyspark>=3.5.0
+
+# --- Utilities ---
+# For managing database credentials securely (Best Practice)
+python-dotenv>=1.0.0
